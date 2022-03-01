@@ -1,14 +1,5 @@
 import './style.css';
 import _ from 'lodash';
+import { getPosts, createPost } from './modules/create.js';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpackBro'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+createPost(getPosts);
