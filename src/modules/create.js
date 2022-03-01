@@ -1,9 +1,9 @@
 const posts = [
-  { name: 100 },
-  { name: 200 },
-  { name: 300 },
-  { name: 70 },
-  { name: 50 },
+  { name: 'Name', score: '180' },
+  { name: 'Name', score: '280' },
+  { name: 'Name', score: '380' },
+  { name: 'Name', score: '80' },
+  { name: 'Name', score: '480' },
 ];
 
 const nameLists = document.querySelector('.name-lists');
@@ -11,7 +11,7 @@ const nameLists = document.querySelector('.name-lists');
 export const getPosts = () => {
   let output = '';
   posts.forEach((post) => {
-    output += `<p class="name-list">Name: ${post.name}</p>`;
+    output += `<p class="name-list">${post.name}: ${post.score}</p>`;
   });
   nameLists.innerHTML = output;
 };
