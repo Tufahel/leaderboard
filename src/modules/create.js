@@ -1,9 +1,9 @@
 const posts = [
-  { name: 'One' },
-  { name: 'Two' },
-  { name: 'Three' },
-  { name: 'Four' },
-  { name: 'Five' },
+  { name: 100 },
+  { name: 200 },
+  { name: 300 },
+  { name: 70 },
+  { name: 50 },
 ];
 
 const nameLists = document.querySelector('.name-lists');
