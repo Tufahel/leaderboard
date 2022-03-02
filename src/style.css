@@ -23,16 +23,6 @@ h1 {
   border: solid 1px black;
 }
 
-.name-list {
-  margin: 10px 2px;
-  padding: 0 200px 0 0;
-}
-
-.name-list:nth-child(odd) {
-  background: whitesmoke;
-  padding: 10px 200px 10px 0;
-}
-
 input {
   margin-bottom: 10px;
 }
@@ -47,4 +37,16 @@ input {
 
 .btn-refresh {
   height: auto;
+}
+
+#nameScoreDiv {
+  display: flex;
+  margin: 10px 2px;
+  padding: 0 200px 0 0;
+  gap: 10px;
+}
+
+#nameScoreDiv:nth-child(odd) {
+  background: whitesmoke;
+  padding: 10px 200px 10px 0;
 }
