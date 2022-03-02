@@ -18,13 +18,11 @@
       </div>
       <div class="form">
         <h3>Add your score</h3>
-        <form>
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" />
+        <form id="form" action="#">
+          <input type="text" id="name" name="name" placeholder="Your name"/><br />
+          <input type="number" id="score" name="score" placeholder="Your score"/>
+          <button type="submit" class="btn btn-submit">Submit</button>
         </form>
-        <button class="btn btn-submit">Submit</button>
       </div>
     </div>
   </body>
