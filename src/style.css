@@ -3,13 +3,22 @@ body {
 }
 
 h1 {
-  margin: 0% 0% 0% 20%;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  text-underline-offset: 25px;
+  margin-bottom: 80px;
+}
+
+h1,
+h2 {
+  color: rgb(248, 80, 80);
 }
 
 .lists-form {
   display: flex;
   justify-content: center;
-  gap: 10%;
+  gap: 5%;
 }
 
 .recent-scores {
@@ -20,22 +29,48 @@ h1 {
 
 .name-lists {
   list-style: none;
-  border: solid 1px black;
-  width: 400px;
+  width: 450px;
   height: 50vh;
   overflow-y: scroll;
   scrollbar-width: auto;
+  border: 1px solid wheat;
 }
 
 input {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  width: 15vw;
   height: 4vh;
-  box-shadow: 2px 1px black;
+  border: none;
+  border-bottom: 2px solid rgb(248, 80, 80);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: rgb(151, 151, 151);
+}
+
+input:focus {
+  outline: none;
+  background-color: rgb(248, 80, 80);
+  color: white;
+  font-weight: 700;
+}
+
+input:focus::placeholder {
+  color: white;
+  font-weight: 500;
 }
 
 .btn {
-  box-shadow: 1px 3px black;
-  height: 5vh;
+  color: white;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(248, 80, 80);
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .btn-submit {
@@ -44,12 +79,20 @@ input {
 
 #nameScoreDiv {
   display: flex;
-  margin: 10px 2px;
-  padding: 0 200px 0 0;
+  padding: 10px 200px 10px 5px;
   gap: 10px;
+  border-bottom: 2px solid rgb(248, 80, 80);
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(248, 80, 80);
+  text-transform: capitalize;
 }
 
 #nameScoreDiv:nth-child(odd) {
-  background: whitesmoke;
-  padding: 10px 200px 10px 0;
+  background: rgb(248, 80, 80);
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 200px 10px 5px;
+  text-transform: capitalize;
 }
