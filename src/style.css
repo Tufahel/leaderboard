@@ -42,12 +42,14 @@ input {
   height: 4vh;
   border: none;
   border-bottom: 2px solid rgb(248, 80, 80);
-  font-weight: 500;
   font-size: 20px;
+  color: rgb(248, 80, 80);
+  font-weight: 700;
 }
 
 input::placeholder {
   color: rgb(151, 151, 151);
+  font-weight: 500;
 }
 
 input:focus {
