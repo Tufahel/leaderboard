@@ -7,7 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hi</h1>
-    <h2>Hello Bro.</h2>
-</body>
+    <h1>Leaderboard</h1>
+    <div class="lists-form">
+      <div>
+        <div class="recent-scores">
+          <h3>Recent scores</h3>
+          <button class="btn btn-refresh">Refresh</button>
+        </div>
+        <div class="name-lists"></div>
+      </div>
+      <div>
+        <h3>Add your score</h3>
+        <form id="form" action="#">
+          <input type="text" id="name" name="name" placeholder="Your name"/><br />
+          <input type="number" id="score" name="score" placeholder="Your score"/>
+        <br>
+          <button type="submit" class="btn btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,14 +1,23 @@
 import './style.css';
 import _ from 'lodash';
+import { getUpdate, createGame, addUpdate } from './modules/async-api.js';
+import { display } from './modules/dom.js';
 
-function component() {
-  const element = document.createElement('div');
+const userName = document.querySelector('#name');
+const userScore = document.querySelector('#score');
+const form = document.querySelector('#form');
+const refreshBtn = document.querySelector('.btn-refresh');
 
-  // Lodash, currently included via a script, is required for this line to work
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpackBro'], ' ');
+createGame();
+form.addEventListener('submit', () => {
+  addUpdate(userName.value, userScore.value);
+  form.reset();
+});
 
-  return element;
-}
+refreshBtn.addEventListener('click', () => {
+  getUpdate();
+});
 
-document.body.appendChild(component());
+window.onload = () => {
+  getUpdate();
+};

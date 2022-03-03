@@ -1,3 +1,52 @@
 body {
-  background-color: blue;
+  margin: 5%;
+}
+
+h1 {
+  margin: 0% 0% 0% 20%;
+}
+
+.lists-form {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.recent-scores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-lists {
+  list-style: none;
+  border: solid 1px black;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.btn {
+  box-shadow: 1px 3px black;
+}
+
+.btn-submit {
+  float: right;
+}
+
+.btn-refresh {
+  height: auto;
+}
+
+#nameScoreDiv {
+  display: flex;
+  margin: 10px 2px;
+  padding: 0 200px 0 0;
+  gap: 10px;
+}
+
+#nameScoreDiv:nth-child(odd) {
+  background: whitesmoke;
+  padding: 10px 200px 10px 0;
 }
