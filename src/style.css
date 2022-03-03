@@ -98,3 +98,9 @@ input:focus::placeholder {
   padding: 10px 200px 10px 5px;
   text-transform: capitalize;
 }
+
+.full-load,
+.form-load {
+  text-align: center;
+  color: green;
+}

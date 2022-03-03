@@ -1,7 +1,10 @@
+import { delay } from 'lodash';
 import { display } from './dom.js';
 
+const fullLoad = document.querySelector('.full-load');
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 let id;
+
 export const createGame = async () => {
   const res = await fetch(`${url}`, {
     method: 'POST',
@@ -29,4 +32,5 @@ export const getUpdate = async () => {
   const update = await fetch(`${url}/${id}/scores/`)
     .then((update) => update.json());
   display(update.result);
+  fullLoad.style.display = 'none';
 };
