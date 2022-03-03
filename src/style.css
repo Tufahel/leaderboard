@@ -21,22 +21,25 @@ h1 {
 .name-lists {
   list-style: none;
   border: solid 1px black;
+  width: 400px;
+  height: 50vh;
+  overflow-y: scroll;
+  scrollbar-width: auto;
 }
 
 input {
   margin-bottom: 10px;
+  height: 4vh;
+  box-shadow: 2px 1px black;
 }
 
 .btn {
   box-shadow: 1px 3px black;
+  height: 5vh;
 }
 
 .btn-submit {
   float: right;
-}
-
-.btn-refresh {
-  height: auto;
 }
 
 #nameScoreDiv {
