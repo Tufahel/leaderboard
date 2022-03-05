@@ -31,7 +31,7 @@ git clone https://github.com/Tufahel/leaderboard.git using your terminal or comm
 
 - GitHub: [@Tufahel](https://github.com/Tufahel)
 - Twitter: [@TufahelAhmed](https://twitter.com/TufahelAhmed)
-- LinkedIn: [@Tufahel Ahmed](linkedin.com/in/tufahel-ahmed)
+- LinkedIn: [@Tufahel Ahmed](https://www.linkedin.com/in/tufahel-ahmed/)
 
 
 ## 🤝 Contributing
